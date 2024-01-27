@@ -353,159 +353,428 @@
 
 <br>
 
+1. In internal fragmentation, memory is internal to a partition and _________________. 
 
-SECTION B: STRUCTURED QUESTIONS
-Question 1
-Performance and abilities of disk input/output (I/O) operation depends on several
-factors; computer system architecture, operating system and disk control hardware.
-(a) In disk scheduling, performances among various scheduling policies varies due
-to difference of value for seek time. What does seek time means?
-[1 mark]
-(b) Label A, B and C accordingly.
+   ```
+     a) is being used
+     b) is not being used
+     c) is always used
+     d) none of the mentioned
+   ```
+
+<br>
+ 
+2. A solution to the problem of external fragmentation is _________________. 
+
+   ```
+     a) compaction
+     b) larger memory space
+     c) smaller memory space
+     d) none of the mentioned
+   ```
+
+<br>
+ 
+3. Another solution to the problem of external fragmentation problem is to _________________. 
+
+   ```
+     a) permit the logical address space of a process to be non-contiguous
+     b) permit smaller processes to be allocated memory at last
+     c) permit larger processes to be allocated memory at last
+     d) all of the mentioned
+   ```
+
+<br>
+ 
+4. __________ is generally faster than _________ and _________________. 
+
+   ```
+     a) first fit, best fit, worst fit
+     b) best fit, first fit, worst fit
+     c) worst fit, best fit, first fit
+     d) none of the mentioned
+   ```
+
+<br>
+
+5. Consider the following page reference string.
+12342156212376321236
+For FIFO page replacement algorithms with 3 frames, the number of page faults is? 
+
+   ```
+     a) 16
+     b) 15
+     c) 14
+     d) 11
+
+     ANSWER : 16
+   ```
+
+<br>
+
+6. When will external fragmentation not occur? 
+
+   ```
+     a) first fit is used
+     b) best fit is used
+     c) worst fit is used
+     d) no matter which algorithm is used, it will always occur (answer)
+   ```
+
+<br>
+ 
+7. _________________ occurs when the memory allocated to a process is slightly larger than the process. 
+
+   ```
+     a) internal fragmentation
+     b) external fragmentation
+     c) both internal and external fragmentation
+     d) neither internal nor external fragmentation
+   ```
+
+<br>
+ 
+8. A process is thrashing if ____________ 
+
+   ```
+     a) it spends a lot of time executing, rather than paging
+     b) it spends a lot of time paging than executing
+     c) it has no memory allocated to it
+     d) none of the mentioned
+   ```
+
+<br>
+ 
+9. When a process is copied into the main memory from the secondary memory according to the requirement. This concept refers to _________________. 
+
+   ```
+     a) Paging
+     b) Demand paging
+     c) Segmentation
+     d) Swapping
+   ```
+
+<br>
+ 
+10. __________________ happens when a program tries to access a page that is mapped in address space but not loaded in physical memory. 
+
+    ```
+      a) segmentation fault occurs
+      b) fatal error occurs
+      c) page fault occurs
+      d) no error occurs
+    ```
+
+<br>
+ 
+11. Why are page replacement algorithms required? 
+
+    ```
+      a) to replace pages faster
+      b) to increase the page fault rate
+      c) to decrease the page fault rate
+      d) to allocate multiple pages to processes
+    ```
+
+<br>
+ 
+12. One of the replacement replacement algorithm which is the optimal replacement algorithm is considerably difficult to implement. This is because _________________. 
+
+    ```
+      a) the algorithm requires a lot of information
+      b) the algorithm requires future knowledge on the page reference
+      c) the algorithm is too complex
+      d) the algorithm is extremely expensive
+    ```
+
+<br>
+ 
+13. When the memory allocated to a process is slightly larger than the process, then _________________. 
+
+    ```
+      a) internal fragmentation occurs
+      b) external fragmentation occurs
+      c) both internal and external fragmentation occurs
+      d) neither internal nor external fragmentation occurs
+    ```
+
+<br>
+ 
+14. The techniques which move the program blocks to or from the physical memory is called as _________________. 
+
+    ```
+      a) Paging
+      b) Virtual memory organisation
+      c) Overlays
+      d) Framing
+    ```
+
+<br>
+ 
+15. The main aim of virtual memory organisation is _________________. 
+
+    ```
+      a) To provide effective memory access
+      b) To provide better memory transfer
+      c) To improve the execution of the program
+      d) All of the mentioned
+    ```
+
+<br>
+ 
+16. What is true about memory management? 
+
+    ```
+      A. Memory management keeps track of each and every memory location
+      B. It decides which process will get memory at what time.
+      C. It tracks whenever some memory gets freed or unallocated and correspondingly it updates the status.
+      D. All of the above
+    ```
+
+<br>
+ 
+17. How many types of Fragmentation are there? 
+
+    ```
+      A. 2
+      B. 3
+      C. 4
+      D. 5
+    ```
+
+<br>
+ 
+18. The memory management system must, therefore, allow controlled access to _________________ areas of memory without compromising essential protection. 
+
+    ```
+      a) relocated
+      b) protected
+      c) shared
+      d) organized
+    ```
+
+<br>
+ 
+19. _________________ is based on the use of one or both of two basic techniques: segmentation and paging. 
+
+    ```
+      a) memory partitioning
+      b) virtual memory
+      c) real memory
+      d) memory organization
+    ```
+
+<br>
+ 
+20. In _________________. there is not necessary to load all of the segments of a process and non-resident segments that are needed are brought in later automatically. 
+
+    ```
+      a) Fixed partitioning
+      b) Simple Paging
+      c) Virtual memory segmentation
+      d) Simple segmentation
+    ```
+
+<br>
+ 
+21. In _________________, there is an inefficient use of memory due to internal fragmentation. 
+
+    ```
+      a) Fixed partitioning
+      b) Simple Paging
+      c) Virtual memory paging
+      d) Simple segmentation
+    ```
+
+<br>
+ 
+22. In almost all modern multiprogramming systems, the principal operation of memory management involves a sophisticated scheme known as _________________. 
+
+    ```
+      a) memory partitioning
+      b) virtual memory
+      c) real memory
+      d) memory organization
+    ```
+
+<br>
+
+**Question 1**<br>
+Performance and abilities of disk input/output (I/O) operation depends on several factors; computer system architecture, operating system and disk control hardware.
+
+(      a) In disk scheduling, performances among various scheduling policies varies due to difference of value for seek time. What does seek time means? **[1 mark]**
+
+<br>
+
+(      b) Label A, B and C accordingly. **[3 marks]**
+
+    
+
 Figure 1 – Disk
-[3 marks]
-(c) There are FOUR (4) common disk scheduling policies commonly used; First in
-First Out (FIFO), Shortest Seek Time First (SSTF), SCAN and C-SCAN.
-Consider the following set of information:-
-Disk track request : 20, 30, 50, 90, 70, 160, 180, 60, 10
-Initial Head location : Track 100
-Head movement : Increasing
 
 
-(d) Employ SSTF, SCAN and FIFO scheduling policies accordingly and show all
-the necessary track movements.
-[12 marks]
-Question 2
-Scheduling is one of the key that leads to multiprogramming on OS environment. There
-are FOUR(4) types of process scheduling commonly involved in OS.
-(a) List down all types of scheduling.
- [4 marks]
-(b) Fill in the table accordingly on the specific types of scheduling based on the
-explanation.
+(      c) There are **FOUR (4)** common disk scheduling policies commonly used; First in First Out (FIFO), Shortest Seek Time First (SSTF), SCAN and C-SCAN.
+
+    Consider the following set of information:-
+    Disk track request : 20, 30, 50, 90, 70, 160, 180, 60, 10
+    Initial Head location : Track 100
+    Head movement : Increasing
+
+<br>
+
+(      d) Employ **SSTF**, **SCAN** and **FIFO** scheduling policies accordingly and show all the necessary track movements. **[12 marks]**
+
+<br>
+
+**Question 2**<br>
+Scheduling is one of the key that leads to multiprogramming on OS environment. There are FOUR(4) types of process scheduling commonly involved in OS.
+
+(      a) List down all types of scheduling. **[4 marks]**
+
+<br>
+
+(      b) Fill in the table accordingly on the specific types of scheduling based on the explanation. **[2 marks]**
+
+    Types of scheduling Explanation
+
 Table 1 – Scheduling type
-Types of scheduling Explanation
-[2 marks]
-(c) There are several scheduling policies that are commonly employed by the
-operating system in order to determine which processes will be chosen for
-execution.
-i. There are TWO (2) decision modes commonly used on uniprocessors’
-scheduling. Name both of them.
-[2 marks]
-ii. Draw the scheduling diagram for the information provided in Table 2 by
-employing Highest Response Ratio Next (HRRN) scheduling policies.
-Calculate the average waiting time as well.
-[11 marks]
+
+<br>
+
+(      c) There are several scheduling policies that are commonly employed by the operating system in order to determine which processes will be chosen for execution.
 
 
-Table 2 - Set of Processes
+i. There are **TWO (2)** decision modes commonly used on uniprocessors’ scheduling. Name both of them. **[2 marks]**
+
+<br>
+
+ii. Draw the scheduling diagram for the information provided in Table 2 by employing Highest Response Ratio Next (HRRN) scheduling policies. Calculate the average waiting time as well. **[11 marks]**
+
 Process Arrival Time Service Time
 J 1 4
 K 2 2
 L 5 3
 M 8 6
 N 9 4
-Question 3
-(a) Consider the following system state which are made up of 4 processes and 4
-resources shown in Figure 2.
+
+Table 2 - Set of Processes
+
+<br>
+
+**Question 3**
+
+(      a) Consider the following system state which are made up of 4 processes and 4 resources shown in Figure 2.
+
 a b c d
 0 1 0 1
 1 2 3 4
 2 2 5 1
 2 1 2 1
 4 3 1 2
-(i) Find the Need Matrix
-[1 mark]
-(ii) Is the system state is in currently safe or unsafe state? Show your
-working steps / calculation and justify your answer. [3 marks]
+
 1 1 1 1
 1 2 3 1
 2 0 2 1
 3 2 1 1
+
 Resource Vector
 Available Vector
 Max Matrix Allocation Matrix
+
 Figure 2
 
+(i) Find the Need Matrix **[1 mark]**
 
-Question 4
-(a) State ONE (1) example of human readable and ONE (1) example of machine
-readable I/O device.
-[3 marks]
-(b) There are THREE (3) main techniques for performing I/O process. List all of
-them.
-[3 marks]
-Question 5
-Deadlocks occur generally because processes deny each other’s’ resources and none
-can proceed to completion. It is a permanent occurrence that cannot be solved
-efficiently. In general, there are several ways or strategies to be dealing with deadlock.
-One of the ways to show a deadlock representation is by using resource allocation
-graphs.
-Processes: PA, PB, PC, PD
-Resources: R1 (3units), R2 (2 units), R3 (2 units), R4 (3 units)
-Requirements: Processes needs to have 3 different resources before it can be executed
-/ completed.
-Draw a Resource Allocation Graph that represents information shown above.
-[10 marks]
-Question 6
-(a) The prime purpose of memory management is to ready programs into memory
-for execution by the processor. Without using virtual memory, there are a few
-main techniques could be used; partitioning, simple paging and simple
-segmentation.
+<br>
+
+(ii) Is the system state is in currently safe or unsafe state? Show your working steps / calculation and justify your answer. **[3 marks]**
+
+<br>
+
+**Question 4**
 
 
-(i) What do you understand on the concept of partitioning?
-[1 mark]
-(ii) There are two types of fragmentation that could happen when
-partitioning technique is being carried out. Name both of the
-fragmentations, and list down TWO (2) differences between both types
-of fragmentations.
-[6 marks]
-(b) Page Replacement Policy is used to decide on the selection of page in main
-memory to be replaced when a newer page is brought in.
-(i) Name TWO (2) algorithms that are commonly used in page replacement
-policy. [2 marks]
-(ii) Given the following information:-
-Resident Set = 3 frames, Page address stream: - | 2 | 3 | 4 | 2 | 1 | 3 | 7 | 5 | 4 | 3 |
-By using any ONE (1) of the algorithms mentioned in Question (b) (i), draw
-a table that shows the page placement correctly.
-[5 marks]
-Question 7
-Process is a combination of program code and a distinct set of associated data. There
-are a lot unique and specific trait or elements that characterized data. x is a special
+(      a) State **ONE (1)** example of human readable and **ONE (1)** example of machine readable I/O device. **[3 marks]**
+
+<br>
+
+(      b) There are **THREE (3)** main techniques for performing I/O process. List all of them. **[3 marks]**
+
+<br>
+
+**Question 5**<br>
+Deadlocks occur generally because processes deny each other’s’ resources and none can proceed to completion. It is a permanent occurrence that cannot be solved efficiently. In general, there are several ways or strategies to be dealing with deadlock. One of the ways to show a deadlock representation is by using resource allocation graphs.
+
+    Processes: PA, PB, PC, PD
+    Resources: R1 (3units), R2 (2 units), R3 (2 units), R4 (3 units)
+    Requirements: Processes needs to have 3 different resources before it can be executed / completed.
+    
+    Draw a Resource Allocation Graph that represents information shown above. **[10 marks]**
+
+<br>
+
+**Question 6**
+
+(      a) The prime purpose of memory management is to ready programs into memory for execution by the processor. Without using virtual memory, there are a few main techniques could be used; partitioning, simple paging and simple segmentation.
+    
+    (i) What do you understand on the concept of partitioning? **[1 mark]**
+    
+    <br>
+    
+    (ii) There are two types of fragmentation that could happen when partitioning technique is being carried out. Name both of the fragmentations, and list down **TWO (2)** differences between both types of fragmentations. **[6 marks]**
+    
+    <br>
+
+(      b) Page Replacement Policy is used to decide on the selection of page in main memory to be replaced when a newer page is brought in.
+    
+    (i) Name **TWO (2)** algorithms that are commonly used in page replacement policy. **[2 marks]**
+    
+    <br>
+    
+    (ii) Given the following information:-
+    Resident Set = 3 frames, Page address stream: - | 2 | 3 | 4 | 2 | 1 | 3 | 7 | 5 | 4 | 3 |
+    By using any **ONE (1)** of the algorithms mentioned in Question (      b) (i), draw a table that shows the page placement correctly. **[5 marks]**
+    
+    <br>
+    
+**Question 7**
+Process is a combination of program code and a distinct set of associated data. There are a lot unique and specific trait or elements that characterized data. x is a special
 program that switches the processor from one process to another.
-(a) Define what is x.
-[1 mark]
-(b) For all processes, there are TWO (2) main model that explains the states of
-processes. Name both models accordingly.
 
 
-[2 marks]
-(c) Process termination stops and halts processes from executing properly. Provide
-THREE (3) reasons that leads to process termination.
-[3 marks]
-Label the following Five-State Process Model accordingly. Figure 4
-[5 marks]
-Question 3
-(a) Input / output (I/O) buffering possesses two main problems; user may hung up
-waiting for completion of I/O process, and the buffer itself may interfere with
-operating system swapping decision.
-In order to fix this, there are THREE (3) types of I/O buffering could be
-attempted by operating system. Name all of them.
- [3 marks]
-(b) There are several disk scheduling algorithms that could be used to ensure
-performance of the disk I/O is optimized. Some of the common ones are FIFO,
-SSTF and SCAN.
-Given the following information, draw the reading movement of the Head on
-the disk, by using the C-Scan algorithm.
+(      a) Define what is x. **[1 mark]**
+
+<br>
+
+(      b) For all processes, there are **TWO (2)** main model that explains the states of processes. Name both models accordingly.
+
+
+**[2 marks]**
+
+
+(      c) Process termination stops and halts processes from executing properly. Provide **THREE (3)** reasons that leads to process termination. **[3 marks]**
+Label the following Five-State Process Model accordingly. Figure 4 **[5 marks]**
+
+<br>
+
+**Question 3**
+
+
+(      a) Input / output (I/O) buffering possesses two main problems; user may hung up waiting for completion of I/O process, and the buffer itself may interfere with operating system swapping decision.
+In order to fix this, there are **THREE (3)** types of I/O buffering could be attempted by operating system. Name all of them. **[3 marks]**
+
+<br>
+
+(      b) There are several disk scheduling algorithms that could be used to ensure performance of the disk I/O is optimized. Some of the common ones are FIFO, SSTF and SCAN.
+Given the following information, draw the reading movement of the Head on the disk, by using the C-Scan algorithm.
 Head initial position: Track 100
 Disc Track Request: 56, 58, 39, 18, 89, 159, 38, 185
 Head movement: Decreasing
 
 
-Use the following graph as your reference, plot the tracks traverse accordingly.
-[9 marks]
-Source: Past year questions for CMPD 353 Fundamentals of OS
----End of Questions--
+Use the following graph as your reference, plot the tracks traverse accordingly. **[9 marks]**
+
+
 Track
 number
 Time
