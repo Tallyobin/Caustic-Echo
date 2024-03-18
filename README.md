@@ -1,5 +1,5 @@
 Lab 1.1:
-
+```
 void setup() {
   pinMode(13, OUTPUT);
 }
@@ -10,12 +10,14 @@ void loop() {
   digitalWrite(13, LOW);
   delay(1000);
 }
+```
+<br>
 
 
 
 
 Lab 1.2:
-
+```
 void setup() {
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
@@ -36,12 +38,14 @@ void loop() {
   digitalWrite(11, LOW); 
   delay(250);
 }
+```
+<br>
 
 
 
 
 Lab 1.2.1:
-
+```
 void setup() {
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
@@ -62,12 +66,14 @@ void kelip(int pin) {
   digitalWrite(pin, LOW);
   delay(250);
 }
+```
+<br>
 
 
 
 
 Lab 1.3:
-
+```
 void setup() {
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
@@ -85,12 +91,14 @@ void kelip(int pin, int masa) {
   delay(masa); 
   digitalWrite(pin, LOW);
 }
+```
+<br>
 
 
 
 
 Lab 1.4:
-
+```
 void setup() {
   tone(7, 262, 250);
   delay(250 * 1.30);
@@ -113,12 +121,14 @@ void setup() {
 void loop() {
   // No operations in the loop
 }
+```
+<br>
 
 
 
 
 Lab 2.1:
-
+```
 int red = 9;
 
 void setup() {
@@ -137,12 +147,14 @@ void loop() {
   analogWrite(red, 40);
   delay(1000);
 }
+```
+<br>
 
 
 
 
 Lab 2.2:
-
+```
 void setup() {
   pinMode(9, OUTPUT);
   pinMode(10, OUTPUT);
@@ -198,12 +210,14 @@ void loop() {
   tone(7, 262, 250);
   delay(250 * 1.30);
 }
+```
+<br>
 
 
 
 
 Lab 3.0:
-
+```
 void setup() {
   pinMode(9, INPUT);
   pinMode(5, OUTPUT);
@@ -216,12 +230,14 @@ void loop() {
     digitalWrite(5, LOW);
   }
 }
+```
+<br>
 
 
 
 
 Lab 4.1:
-
+```
 void setup() {
   Serial.begin(9600);
 }
@@ -233,12 +249,14 @@ void loop() {
   Serial.println(Vin);
   delay(100);
 }
+```
+<br>
 
 
 
 
 Lab 4.2:
-
+```
 void setup() {
   pinMode(9, OUTPUT);
 }
@@ -248,12 +266,14 @@ void loop() {
   pot = map(pot, 0, 1023, 0, 255);
   analogWrite(9, pot);
 }
+```
+<br>
 
 
 
 
 Lab 4.3:
-
+```
 int LDR_Pin = A0; //analog pin A0
 
 void setup() {
@@ -272,12 +292,14 @@ void loop() {
     digitalWrite(2, LOW);
   }
 }
+```
+<br>
 
 
 
 
 Lab 4.4:
-
+```
 void setup() {
   Serial.begin(9600);
 }
@@ -289,12 +311,14 @@ void loop() {
   Serial.println(temp);
   delay(100);
 }
+```
+<br>
 
 
 
 
 Lab 5.1:
-
+```
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(8, 9, 10, 11, 12, 13); //RS, EN, D4, D5, D6, D7
 
@@ -307,12 +331,14 @@ void loop() {
   lcd.setCursor(0, 1);
   lcd.print(millis() / 1000);
 }
+```
+<br>
 
 
 
 
 Lab 5.2:
-
+```
 #include <SimpleDHT.h>
 int pinDHT11 = 2;
 SimpleDHT11 dht11(pinDHT11);
@@ -337,12 +363,14 @@ void loop() {
   //it is a must to have this delay when working DHT11.
   delay(1500);
 }
+```
+<br>
 
 
 
 
 Lab 5.3:
-
+```
 #include <Wire.h>
 #include "RTClib.h"
 RTC_DS1307 RTC;
@@ -374,9 +402,24 @@ void loop() {
   Serial.println();
   delay(1000);
 }
+```
+<br>
 
 
 
 
 Lab 6.1:
+```
+```
+<br>
+
+
+
+
 Lab 6.2:
+```
+```
+<br>
+
+
+
