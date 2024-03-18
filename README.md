@@ -119,7 +119,6 @@ void setup() {
 }
 
 void loop() {
-  // No operations in the loop
 }
 ```
 <br>
